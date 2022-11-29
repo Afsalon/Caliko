@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+:root {
+  --shadow-black: rgba(0, 0, 0, 0.3);
+  --background-yellow: #f9f8f4;
+  --small-grey: #617d98;
+  --bg-grey: #f1f5f8;
+  --bold-blue: #102a42;
+  --underline: #ab7a5f;
+  --bg-brown: #eaded7;
+  --loader-bg: #eee;
+  --offwhite: #999;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.home-bg,
+.article-bg,
+.about-bg,
+.search-bg,
+.mail-bg,
+.blog-bg {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg-brown);
+}
+
+.search-bg,.blog-bg {
+  background-color: var(--background-yellow);
+}

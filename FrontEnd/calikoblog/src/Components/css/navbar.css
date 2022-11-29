@@ -1,0 +1,57 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-yellow);
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    font-size: 1.5rem;
+}
+
+.navbar-logo {
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+
+.fa-bars {
+    display: none;
+    cursor: pointer;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.cross-ham {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    float: right;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:750px) {
+    .navbar-list {
+        display: none;
+    }
+
+    .navbar-about {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+}

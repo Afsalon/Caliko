@@ -1,0 +1,141 @@
+.blog-body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+}
+
+.blog-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.blog-right {
+    width: 100%;
+    background-color: var(--bg-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter::first-letter {
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.blog-picture {
+    width: 100%;
+    max-height: 75rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.blog-titile {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    color: var(--bold-blue);
+    text-align: center;
+}
+
+.blog-opening {
+    font-size: 1.8rem;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    color: var(--bold-blue)
+}
+
+.blog-subsections {
+    background-color: var(--bg-brown);
+    padding: 1rem 3rem;
+}
+
+.blog-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author-details {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    width: 60%;
+}
+
+.blog-author {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.author-details-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-author {
+    width: 50%;
+}
+
+.blog-author-value {
+    font-size: 1.5rem;
+    margin-top: 0;
+    letter-spacing: 2px;
+    color: var(--small-grey);
+    font-weight: 900;
+}
+
+.blog-social {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.blog-social-value {
+    font-size: 1.5rem;
+    margin-top: 0;
+    letter-spacing: 2px;
+    color: var(--small-grey);
+    font-weight: 900;
+}
+
+.loading-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1150px) {
+
+    .blog-left,
+    .author-details {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    .blog-left,
+    .author-details {
+        width: 80%;
+    }
+
+    .blog-opening {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .blog-left,
+    .author-details {
+        width: 95%;
+    }
+
+}

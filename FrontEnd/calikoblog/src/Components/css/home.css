@@ -1,0 +1,80 @@
+.home-main {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.home-welcome {
+    font-size: 3.6rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: var(--bold-blue);
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+.welcome-motto {
+    color: var(--small-grey);
+    letter-spacing: 3px;
+    margin-top: 0;
+}
+
+.welcome-quote {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.discovery {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-top: 3rem;
+    color: var(--bold-blue);
+}
+
+.category-button,
+.articles-button {
+    border: 1px solid var(--small-grey);
+    background-color: var(--bg-brown);
+    color: var(--small-grey);
+    border-radius: 3px;
+    font-size: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 0.5rem 0.5rem;
+}
+
+.category-button:hover {
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+.articles-button {
+    background-color: var(--underline);
+    color: white;
+    border: 1px solid var(--underline);
+    -webkit-box-shadow: 0 0 10px var(--shadow-black);
+    box-shadow: 0 0 10px var(--shadow-black);
+    margin-bottom: 3rem;
+}
+
+.articles-button:hover {
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width:550px) {
+    .home-welcome {
+        font-size: 3rem;
+    }
+
+    .home-main {
+        padding-left: 10px;
+    }
+}

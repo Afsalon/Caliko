@@ -1,0 +1,129 @@
+.mailbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mail-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+}
+
+.mail-title {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: var(--bold-blue);
+    margin-bottom: 0;
+}
+
+.mail-name,
+.mail-message {
+    border: 2px solid #A83732;
+    background-color: var(--background-yellow);
+    width: 50%;
+    height: 3rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
+}
+
+.mail-name::placeholder,
+.mail-message::placeholder {
+    padding-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mail-message {
+    height: 20rem;
+    width: 100%;
+}
+
+.mail-info {
+    font-size: 1.5rem;
+    color: var(--small-grey);
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+.mail-notice {
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    right: 2.8rem;
+    color: var(--bold-blue);
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+li::before {
+    content: "\2022";
+    color: var(--underline);
+    font-weight: bold;
+    display: inline-block;
+}
+
+li {
+    margin-top: 0.5rem;
+}
+
+.mail-button {
+    border: 1px solid var(--bold-blue);
+    background-color: var(--bold-blue);
+    color: white;
+    width: 10rem;
+    height: 5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin: 1rem 0;
+    -webkit-box-shadow: 0 0 10px var(--shadow-black);
+    box-shadow: 0 0 10px var(--shadow-black);
+    border-radius: 3px;
+}
+
+.submitted-text {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--bold-blue);
+}
+
+.mail-submitted {
+    background-color: white;
+    padding: 5rem;
+    -webkit-box-shadow: 0 0 10px var(--shadow-black);
+    box-shadow: 0 0 10px var(--shadow-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+}
+
+.mail-submitted-line1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-help-text {
+    color: var(--small-grey);
+    font-weight: 900;
+    margin-top: 0.5rem;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:700px) {
+    .mail-notice {
+        font-size: 1rem;
+    }
+
+}
